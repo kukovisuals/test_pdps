@@ -7,7 +7,7 @@ module.exports = defineConfig({
     viewportHeight: 667,
     // viewportWidth: 1309,
     // viewportHeight: 726,
-    baseUrl: 'https://shop.join-eby.com/',
+    baseUrl: 'http://127.0.0.1:3005',
     video:false,
 
   },

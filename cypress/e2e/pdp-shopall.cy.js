@@ -31,10 +31,10 @@ describe(`Grab all the pdp SKU and Array of pdps`, () => {
             let newData = response.body.products;
 
             for(let pdp of newData){
-                if(pdp.tags.includes('#Sale')){
+                // if(pdp.tags.includes('#Sale')){
                     skus.push(pdp.id)
                     pdpName.push('/products/' + pdp.handle)
-                }
+                // }
             }
         });
     })    
@@ -72,10 +72,6 @@ const sale = '.priceProduct.holidayPriceWrapper.standard.bfx-price'
 const hiddenPrice = '.priceProduct.bfx-price';
 const vipPrice = '.ebyProdTile-vipPriceWrapper'
 
-// /products/sunkissed-brief
-// /products/grey-bikini-panties
-// /products/sleek-tiger-thong
-// /products/sleek-tiger-brief
 describe(`Check prices are hidden`, () => {
 for( let i = 0; i < pdps.length; i++){
 // for( let i = 0; i < 2; i++){

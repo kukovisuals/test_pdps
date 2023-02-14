@@ -31,10 +31,10 @@ describe(`Grab all the pdp SKU and Array of pdps`, () => {
             let newData = response.body.products;
 
             for(let pdp of newData){
-                if(pdp.tags.includes('#Sale')){
+                // if(pdp.tags.includes('#Sale')){
                     skus.push(pdp.id)
                     pdpName.push('/products/' + pdp.handle)
-                }
+                // }
             }
         });
     })    
