@@ -2,12 +2,15 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
+    defaultCommandTimeout: 10000,
+    browserWebSecurity: false,
+    pageLoadTimeout: 60000,
     chromeWebSecurity: false,
-    viewportWidth: 375,
-    viewportHeight: 667,
+    viewportWidth: 390,
+    viewportHeight: 844,
     // viewportWidth: 1309,
     // viewportHeight: 726,
-    baseUrl: 'http://127.0.0.1:3005',
+    baseUrl: 'https://shop.join-eby.com/',
     video:false,
 
   },
